@@ -18,7 +18,6 @@ p1, p2 = {
     }
 }
 
-print(p1, p2)
 
 p1_file = 'p1_file.txt'
 p2_file = 'p2_file.txt'

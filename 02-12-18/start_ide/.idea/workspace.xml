@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b0a49f2-0364-4a41-8809-2882e97f6e8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../last-home-work/p1_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../last-home-work/p1_file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../last-home-work/p2_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../last-home-work/p2_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last-home-work/p1_json_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../last-home-work/p1_json_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last-home-work/p2_json_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../last-home-work/p2_json_file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../last-home-work/with_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/../last-home-work/with_json.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../last-home-work/with_str.py" beforeDir="false" afterPath="$PROJECT_DIR$/../last-home-work/with_str.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
