@@ -1,0 +1,6 @@
+name Enosh
+age 28
+country Israel
+city Holon
+street Tel Aviv
+number 2
