@@ -3,10 +3,12 @@
 input_msg = 'Please enter any number\n'
 num_list = [int(input(input_msg)), int(input(input_msg)), int(input(input_msg))]
 
+
 # Conditions
 print(f"""1)
 values: {num_list[0]} > {num_list[1]}
-result: {num_list[0] > num_list[1]}""")
+result: {num_list[0] > num_list[1]}
+""")
 
 print(f"""2)
 values: {num_list[0]} > {num_list[1]} or {num_list[0]} > {num_list[2]}
@@ -25,7 +27,7 @@ result: {sum(num_list) > (len(num_list) * 3)}
 
 # 2)
 # Initial Strings
-input_msg2 = 'Please enter some text'
+input_msg2 = 'Please enter some text\n'
 str1 = input(input_msg2)
 str2 = input(input_msg2)
 
@@ -42,7 +44,8 @@ result: {str1.startswith('t') or str2.startswith('t')}
 
 print(f"""3)
 values: not ({str1}.islower() and {str2}.islower())
-result: {not (str1.islower() and str2.islower())}""")
+result: {not (str1.islower() and str2.islower())}
+""")
 
 print(f"""4)
 values: ({len(str1)} < {len(str2)}) and ({str1}.startswith('t') or {str1}.startswith('w'))
@@ -79,13 +82,15 @@ result: {read_content.islower()}
 """)
 
 all_words = read_content.split()
+
 print(f"""3)
-values: any(item.startswith('t') for item in all_words)
-result: {any(item.startswith('t') for item in all_words)}
+values: any(item.startswith('d') for item in all_words)
+result: {any(item.startswith('d') for item in all_words)}
 """)
 
 with_word = [item for item in all_words if item.startswith('a')]
 
+print(with_word)
 print(f"""4)
 values: {len(with_word)} > 0 and {len(with_word[0])} >= 3
 result: {len(with_word) > 0 and len(with_word[0]) >= 3}
@@ -96,6 +101,7 @@ result: {len(with_word) > 0 and len(with_word[0]) >= 3}
 Another way..
 """
 # 3) 3)
+
 for word in all_words:
     if word.startswith('t'):
         condition = True
