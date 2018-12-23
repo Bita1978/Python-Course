@@ -3,33 +3,33 @@ Creating a function - Definition
 """
 
 
-# def print_hi():
-#     print('hi')
-#
-#
-# print_hi()
+def print_hi():
+    print('hi')
 
 
-# def print_with_name(name):
-#     print(f'Hi {name}')
-#
-#
-# print_with_name("Enosh")
+def print_with_name(name):
+    print(f'Hi {name}')
 
-# def print_name_age(name, age):
-#     print(f'Hi {name} your age is {age}')
-#
-# print_name_age("Avner" , 24)
 
-# def create_person(name, age, location):
-#     person = {
-#         'name': name,
-#         'age': age,
-#         'location': location
-#     }
-#
-#     print(person)
-#
+print_with_name("Enosh")
+
+
+def print_name_age(name, age=23):
+    print(f'Hi {name} your age is {age}')
+
+
+print_name_age("Avner")
+
+
+def create_person(name='avner', age=18, location={}):
+    person = {
+        'name': name,
+        'age': age,
+        'location': location
+    }
+
+    print(person)
+
 #
 # create_person('Itay', 43, {'city': 'Herzelia', 'street': 'Ha Maskit', 'number': 2})
 
@@ -40,11 +40,8 @@ Creating a function - Definition
 #         'location': location
 #     }
 #
-#     return person
-#
-#
-# p1 = create_person('Efrat', 54, {'city': 'Eilat'})
-# print(p1)
+#     return  person
+
 
 # def numbers_addition(num1, num2):
 #     return num1 + num2
