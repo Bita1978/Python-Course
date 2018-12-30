@@ -7,6 +7,7 @@ persons = [{'name': input('Enter your name\n'),
             'age': int(input('Enter your age\n'))}
            for i in range(3)]
 
+
 # Lazy Initial
 persons = [{'name': 'Ed', 'age': 43}, {'name': 'Evyatar', 'age': 23}, {'name': 'Yaara', 'age': 12}]
 

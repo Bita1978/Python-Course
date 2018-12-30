@@ -14,7 +14,7 @@ print(users_list)
 
 # Lazy Initial
 users_list = ['Enosh', 'Lior', 'Dany', 'Maor', 'Ofer', 'Ori', 'Roy', 'Dorin', 'Ran', 'Yaniv']
-
+#
 # Creating even & odd lists
 even_list = []
 odd_list = []
@@ -24,6 +24,9 @@ for index, value in enumerate(users_list):
         even_list.append(value)
     else:
         odd_list.append(value)
+
+# even_list = users_list[::2]
+
 
 # Even from the even_list
 for index, value in enumerate(even_list):
@@ -36,8 +39,8 @@ for index, value in enumerate(users_list):
     if index % 2 == 0 and index > 4:
         print(value)
 
-
-# Odd from the odd_list
+#
+# # Odd from the odd_list
 for index, value in enumerate(odd_list):
     if index != 1 and index != 5:
         print(value)
@@ -55,14 +58,5 @@ for index, value in enumerate(users_list):
     if (index % 2 != 0 and (1 != index != 5)) or (index % 2 == 0 and index > 4):
         final_list.append(value)
 
-
-
-
-
-
-
-
-
-
-
+print(final_list)
 

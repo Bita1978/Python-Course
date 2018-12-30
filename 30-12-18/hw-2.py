@@ -23,23 +23,23 @@ name_list = [input('Enter your name\n') for x in range(4)]
 pwd_list = [input('Enter your password\n') for x in range(4)]
 
 
-# Lazy Initial
+# # Lazy Initial
 name_list = ['johnathan', 'Sam', 'Bruce']
 pwd_list = ['1234', '123#', 'BruceWayne#12']
 pwd_winners = {}
-
+#
 different_keys = ['~', '`', '!', '@', '$', '%', '^', '&',
                   '*', '(', ')', '_', '-', '+', '=', '|', '\\',
                   '[', '{', ']', '}', ';', ':', "'", '"', '/',
                   '>', '<', ',', '.', '?', '#']
-
-# Longest
+#
+# # Longest
 longest_len = 0
 longest_str = ''
 longest_list = []
 equal_to_longest = []
-
-# Get the longest string
+#
+# # Get the longest string
 for index, pwd in enumerate(pwd_list):
     # Saving longest string base on iterations
     if len(pwd) > longest_len:
@@ -56,19 +56,19 @@ for index, pwd in enumerate(pwd_list):
             for password in equal_to_longest:
                 if len(password) >= longest_len:
                     longest_list.append(password)
-
-# Adding winning points to the longest winners
+#
+# # Adding winning points to the longest winners
 for longest in longest_list:
     pwd_winners[f"{longest}"] = 1
-
-
-# Validate upper and lower case
+#
+#
+# # Validate upper and lower case
 upper = False
 lower = False
-
+#
 for pwd in pwd_list:
     # Checking every letter if its lower or upper case
-    for letter in pwd:
+    for letter in pwd: # AbcD
         if letter.islower():
             lower = True
         else:
@@ -80,9 +80,9 @@ for pwd in pwd_list:
             pwd_winners[f"{pwd}"] = 1
         else:
             pwd_winners[f"{pwd}"] = pwd_winners[f"{pwd}"] + 1
-
-
-# Checking characters that are not letters
+#
+#
+# # Checking characters that are not letters
 for pwd in pwd_list:
     onlyLetters = True
 
@@ -96,15 +96,15 @@ for pwd in pwd_list:
             pwd_winners[f"{pwd}"] = 1
         else:
             pwd_winners[f"{pwd}"] = pwd_winners[f"{pwd}"] + 1
-
-
+#
+#
 # Reveal the winner ( or winners with the same results )
 winners = []
 second_winners = {}
 best_score = 0
 counter = 0
-
-
+#
+#
 for key, value in pwd_winners.items():
 
     # Getting best score base on iteration

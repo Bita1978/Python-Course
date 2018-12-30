@@ -13,7 +13,7 @@ def subtract(num1, num2):
 
 
 def subdivision(num1, num2):
-    if num1 == 0 or num2 == 0:
+    if num2 == 0:
         print('You can not divide by 0')
     else:
         print(num1 / num2)
@@ -41,10 +41,5 @@ def calc(num1, num2, operator):
         subdivision(num1, num2)
 
 
-calc(3, 7, '+')
-calc(3, 7, '-')
-calc(3, 7, '*')
-calc(3, 7, '/')
-calc(3, 7, 'l')
-
+calc(3, 7, '?')
 
