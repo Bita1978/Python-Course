@@ -1,4 +1,4 @@
-# Task 1
+
 
 
 def three_arguments(num1, num2, num3):
