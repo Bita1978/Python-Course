@@ -7,21 +7,21 @@ class SimplePerson:
 
 
 person = SimplePerson()
-# person.print_hello()
+person.print_hello()
 
 
 class PersonConstructor:
 
     def __init__(self):
-        self.name = 'Avner'
+        self.name = 'Elly'
 
     def print_hello(self):
         print(f"Hello {self.name}")
 
 
 person = PersonConstructor()
-# print(person.name)
-# person.print_hello()
+print(person.name)
+person.print_hello()
 
 
 class PersonInitial:
@@ -34,11 +34,12 @@ class PersonInitial:
 
 
 person1 = PersonInitial('Efrat')
+print(person1.inside_name)
 person2 = PersonInitial('Itay')
-
-# person1.print_hello()
-# person2.print_hello()
-# print(person1)
+print(person2.inside_name)
+person1.print_hello()
+person2.print_hello()
+print(person1)
 
 
 class PersonToString:
@@ -51,7 +52,7 @@ class PersonToString:
 
 
 person = PersonToString(name='Itay')
-# print(person)
+print(person)
 
 
 class PersonLength:
@@ -99,8 +100,9 @@ class PersonAccess:
 
 
 person = PersonAccess()
-# print(person.public)
-# print(person.__name)
+
+print(person.public)
+print(person.__name)
 
 
 class PersonGetter:
@@ -114,7 +116,7 @@ class PersonGetter:
 
 person = PersonGetter(name="Itay")
 person_name = person.get_name()
-# print(person_name)
+print(person_name)
 
 
 class PersonGettersSetters:
