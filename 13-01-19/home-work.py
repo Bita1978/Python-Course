@@ -1,3 +1,9 @@
+my_legal_age_list = {}
+
+def get_age(age):
+    my_legal_age_list
+
+
 """
 ##########
 # Task 1 #
@@ -25,7 +31,6 @@ class Person:
         """
         self.name = name
         self.hobby = hobby
-
         if age < 1 or age > 120:
             print(f'Age is illegal: {age}, it will set to 0')
             self.age = 0
@@ -64,7 +69,7 @@ class Person:
         return f"Person [\n\tname: {self.name}\n\tage: {self.age}\n\thobby:{self.hobby}\n]"
 
 
-# person1 = Person('Yaniv', 20, 'cooking')
+# person1 = Person('Yaniv', 0, 'cooking')
 # person1.print_person()
 # print(person1)
 
@@ -123,7 +128,7 @@ class DisneyLand:
                 print(f"Get ready {customer.name} this is the {i} round!")
 
 
-# customer = Customer('Maor', 60)
+# customer = Customer('Maor', 23)
 # disney_land = DisneyLand();
 # disney_land.roller_coaster(customer)
 
@@ -175,8 +180,8 @@ class Dog:
                f"\n]"
 
 
-# dog = Dog("Cashew", 4)
+dog = Dog("Cashew", 1)
 # dog.name = "Einstein"
 # print(dog)
-# human_age = dog.get_my_human_age()
-# print(human_age)
+human_age = dog.get_my_human_age()
+print(human_age)
