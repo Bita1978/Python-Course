@@ -102,7 +102,7 @@ class Calc:
             operator = input(self.__operator_err_msg + '\n')
         self.__operator = operator
 
-    def preform(self, num1, num2):
+    def perform(self, num1, num2):
         if self.operator == '+':
             return num1 + num2
         elif self.operator == '-':
@@ -121,5 +121,5 @@ class Calc:
 
 
 c = Calc('?')
-results = c.preform(7, 0)
+results = c.perform(7, 0)
 print(results)
