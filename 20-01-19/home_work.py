@@ -29,24 +29,29 @@ class Person:
         return f"Person({self.full_name}, {self.age})"
 
 
+
 # p1 = Person("Gil", "Ehud", 43)
 # p2 = Person("Dana", "Reuven", -9)
 # p3 = Person("Oded", "Ben", 8)
+
 #
 # p_list = []
-
+#
 # for i in range(3):
 #     p = Person(input("Enter first name:\n"),
 #                input("Enter last name:\n"),
 #                int(input("Enter age:\n")))
 #     p_list.append(p)
+#
+# for p in p_list:
+#     print(p)
 
-
-"""
-Task 2
-"""
-
-
+#
+# """
+# Task 2
+# """
+#
+#
 class Friends:
 
     __friends = []
@@ -77,12 +82,12 @@ class Friends:
 # f.remove_friend("Shalom")
 # f.remove_friend("Liat")
 # print(f.friends)
-
-"""
-Task 3
-"""
-
-
+#
+# """
+# Task 3
+# """
+#
+#
 class Calc:
 
     __operator_types = ('+', '-', '*', '/', '%')
@@ -118,6 +123,7 @@ class Calc:
             return num1 % num2
         else:
             self.operator = '?'
+
 
 
 c = Calc('?')
