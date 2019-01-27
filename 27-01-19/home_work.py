@@ -1,3 +1,4 @@
+
 """
 Task 1
 """
@@ -5,7 +6,7 @@ Task 1
 
 class App:
 
-    app_version = 0
+    app_version = 9
 
     def __init__(self, app_name):
         self.__app_name = app_name
@@ -18,6 +19,14 @@ class App:
     def update_version(cls, new_version):
         if new_version > cls.app_version:
             cls.app_version = new_version
+        else:
+            print_args("...")
+
+    def update_version_for_instance(self, new_version):
+        if new_version > self.app_version:
+            self.app_version = new_version
+        else:
+            print_args("...")
 
     def __str__(self):
         return f"App (name = {self.name}, version = {self.app_version})"
@@ -27,17 +36,16 @@ app1 = App("What's App")
 app2 = App("Chrome Browser")
 app3 = App("Facebook")
 
-App.update_version(-9)
-
+# App.update_version(8)
+App.app_version =9
 
 def print_args(*args):
     for a in args:
         print(a)
     print(f"Done {'-' * 30}")
 
+# app1.update_version_for_instance(90)
 
-# print_args(app1, app2, app3)
-App.update_version(8)
 # print_args(app1, app2, app3)
 
 
@@ -64,18 +72,17 @@ class Filter:
 content1 = "python is awesome"
 content2 = 9
 
-
 def using_filter(content):
     if Filter.is_str(content):
         if not Filter.is_empty(content):
             return Filter.to_title(content)
     return content
-
-
+#
+#
 content1 = using_filter(content1)
 content2 = using_filter(content2)
 
-# print_args(content1, content2)
+print_args(content1, content2)
 
 
 """
