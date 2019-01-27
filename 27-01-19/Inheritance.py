@@ -14,8 +14,9 @@ class Player(Entity):
     def __init__(self, name):
         super().__init__( name=name, health=100, xp=0)
 
-
+    def who_am_i(self):
+        return self.__class__.__name__
 
 
 player = Player(name="Avner")
-player.speak()
+print(player.who_am_i())
