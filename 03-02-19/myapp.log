@@ -1,0 +1,7 @@
+02-03 18:27 root         INFO     GoldBank deposit operation succeeded, Mony: 97.1
+02-03 18:27 root         INFO     SilverBank deposit operation succeeded, Mony: 95.1
+02-03 18:27 root         INFO     BronzeBank deposit operation succeeded, Mony: 93.1
+02-03 18:27 root         ERROR    GoldBank: Not enough money in the bank: 97.1
+02-03 18:27 root         ERROR    SilverBank: Not enough money in the bank: 95.1
+02-03 18:27 root         ERROR    BronzeBank: Not enough money in the bank: 93.1
+02-03 18:27 root         INFO     GoldBank withdraw operation succeeded, Money: 44.199999999999996

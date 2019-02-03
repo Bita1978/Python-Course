@@ -63,7 +63,7 @@ class Phone:
             self.memory += self.memory_operation
             logging.info(f"{self.__class__.__name__}: {contact} removed successfully , Memory: {self.memory}")
 
-    def remove_many_contact(self, *args):
+    def remove_many_contacts(self, *args):
         for contact in args:
             self.remove_from_contacts(contact)
 
@@ -100,11 +100,11 @@ p5 = {'Kobi', '0523054131'}
 
 # iphone = IPhone()
 # iphone.add_many_contacts(p1, p2, p3, p4)
-# iphone.remove_many_contact(p5, p3)
+# iphone.remove_many_contacts(p5, p3)
 #
 # android = Android()
 # android.add_many_contacts(p1, p2, p3, p4)
-# android.remove_many_contact(p5, p3)
+# android.remove_many_contacts(p5, p3)
 
 """
 Second Task
@@ -169,3 +169,4 @@ silver.withdraw(95)
 bronze.withdraw(93)
 
 money = gold.withdraw(50)
+print(money)
