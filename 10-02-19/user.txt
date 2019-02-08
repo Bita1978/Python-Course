@@ -1,0 +1,1 @@
+{"name": "Avner", "points": 0, "lives": 3}
