@@ -1,12 +1,12 @@
 from user.utils import Utils as utils
 
+
 class User:
 
     def __init__(self, name, points=0, lives=3):
         self.__name = name
         self.__points = points
         self.__lives = lives
-
 
     @property
     def name(self):

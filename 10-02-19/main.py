@@ -9,5 +9,4 @@ if not user_details:
     user_io.write_to_file(user_dict)
     user_details = user_io.read_from_file()
 
-
 print(user_details)

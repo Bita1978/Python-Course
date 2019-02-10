@@ -13,7 +13,6 @@ class UserIO:
             return
         cls.__path = new_path
 
-
     @classmethod
     def read_from_file(cls):
         try:
