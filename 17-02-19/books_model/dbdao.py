@@ -117,8 +117,8 @@ class BooksDBAO:
                 return None
 
             # Returns results
-            book_by_id = Book(id=results[0], name=results[1], author=results[2])
-            return book_by_id
+            book_by_name = Book(id=results[0], name=results[1], author=results[2])
+            return book_by_name
 
         # Error
         except mysql.connector.Error as error:
