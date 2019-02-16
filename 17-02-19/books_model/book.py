@@ -10,7 +10,7 @@ class Book:
         return self.__id
 
     @id.setter
-    def name(self, new_id):
+    def id(self, new_id):
         if not new_id:
             return
         else:
