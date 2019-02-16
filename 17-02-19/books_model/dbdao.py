@@ -10,14 +10,13 @@ class BooksDBAO:
         self.db = db
         self.cursor = self.db.cursor()
 
-    @classmethod
-    def create_table(cls):
+    def create_table(self):
         """
         Create Books Table
         :return:
         """
         try:
-            cls.cursor.execute("CREATE TABLE BOOKS "
+            self.cursor.execute("CREATE TABLE BOOKS "
                                "(ID INT AUTO_INCREMENT PRIMARY KEY, "
                                "NAME VARCHAR(255), "
                                "AUTHOR VARCHAR (255) "
